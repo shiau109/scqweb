@@ -1,6 +1,6 @@
 from fastapi import APIRouter
 from pydantic import BaseModel
-from resonator.calculator import ResonatorModel
+from resonator.notch import ResonatorModel
 
 router = APIRouter()
 
