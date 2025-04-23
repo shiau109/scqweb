@@ -1,0 +1,42 @@
+# 🧪 Qubit Web GUI
+
+This project is a full-stack application that includes:
+- 📤 A React + Vite frontend for user interaction and data entry
+- 🧠 A FastAPI backend for physics-related computation
+- 🐳 Dockerized environment for easy deployment and reproducibility
+
+---
+
+## ⚙️ Prerequisites
+
+Before running the project, make sure the following tools are installed:
+
+### 🐳 Docker & Docker Compose
+- Install Docker Desktop from: https://www.docker.com/products/docker-desktop
+- Docker Compose is included with Docker Desktop
+- After installation, verify:
+
+docker --version
+docker-compose --version
+
+### 🟢 Node.js & npm (for local frontend-only development)
+- Install Node.js from: https://nodejs.org (LTS version recommended)
+- npm is included automatically
+
+Verify installation:
+node -v
+npm -v
+
+## 🚀 Getting Started
+1. Clone the Repository
+bash
+git clone https://github.com/your-username/quantum-sim-gui.git
+
+2. Build and Start the App (Dockerized)
+bash
+cd quantum-sim-gui
+docker-compose up --build
+
+## Debug
+### Backend api check
+http://localhost:8000/docs

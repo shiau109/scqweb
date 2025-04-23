@@ -14,6 +14,10 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+from routers import resonator
+app.include_router(resonator.router)
+
+
 
 @app.post("/analyze")
 async def analyze(file: UploadFile = File(...), parameter: float = Form(...)):
