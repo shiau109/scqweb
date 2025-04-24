@@ -29,12 +29,10 @@ npm -v
 
 ## 🚀 Getting Started
 1. Clone the Repository
-bash
-git clone https://github.com/your-username/quantum-sim-gui.git
+https://github.com/shiau109/scqweb
 
 2. Build and Start the App (Dockerized)
 bash
-cd quantum-sim-gui
 docker-compose up --build
 
 ## Debug
