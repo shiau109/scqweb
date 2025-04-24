@@ -1,5 +1,5 @@
 import React from 'react';
-import ResonatorForm from './components/ResonatorForm';
+import ResonatorForm from '../components/ResonatorForm';
 
 function App() {
   return (

@@ -9,11 +9,12 @@ app = FastAPI()
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=["http://localhost:3000"],  # Adjust if your frontend runs on a different origin
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
 from .routers import resonator
 app.include_router(resonator.router)
 
