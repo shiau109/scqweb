@@ -12,7 +12,12 @@ function App() {
       <nav className="flex gap-4 mt-4">
         <Link to="/formula">
           <button className="px-4 py-2 bg-blue-600 text-white rounded shadow hover:bg-blue-700">
-            Go to Formula Calculator
+            Formula Calculator
+          </button>
+        </Link>
+        <Link to="/resonator">
+          <button className="px-4 py-2 bg-blue-600 text-white rounded shadow hover:bg-blue-700">
+            Resonator
           </button>
         </Link>
       </nav>
