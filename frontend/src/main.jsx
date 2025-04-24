@@ -1,18 +1,6 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import FormulaPage from './pages/FormulaPage'
-import ResonatorPage from './pages/ResonatorPage'
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import App from './App';
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<App />} />
-        <Route path="/formula" element={<FormulaPage />} />
-        <Route path="/resonator" element={<ResonatorPage />} />
-      </Routes>
-    </BrowserRouter>
-  </React.StrictMode>
-)
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<App />);
