@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Layout from './components/Layout';
 import Home from './pages/Home';
+import Resonator from './pages/ResonatorPage';
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <Layout>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/Resonator" element={<Resonator />} />
           {/* Other routes */}
         </Routes>
       </Layout>

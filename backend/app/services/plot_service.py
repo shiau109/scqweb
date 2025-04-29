@@ -1,15 +1,10 @@
 import matplotlib.pyplot as plt
-import numpy as np
+from matplotlib.figure import Figure
 import io
 
-def generate_plot(frequency, response):
-    plt.figure()
-    plt.plot(frequency, np.abs(response))
-    plt.xlabel("Frequency")
-    plt.ylabel("Response Magnitude")
-    plt.title("Resonator Response")
+def generate_plot( fig:Figure ):
     buf = io.BytesIO()
-    plt.savefig(buf, format='png')
-    plt.close()
+    fig.savefig(buf, format='png')
+    plt.close(fig)
     buf.seek(0)
     return buf

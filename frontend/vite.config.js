@@ -1,8 +1,11 @@
 import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
-import tailwindcss from '@tailwindcss/vite'
-import path from 'path'
-
+import tailwindcss from '@tailwindcss/vite';
+import react from '@vitejs/plugin-react';
+// import { plugin as markdownPlugin, Mode } from 'vite-plugin-markdown'
+// markdownPlugin({
+//   // at minimum you’ll need raw Markdown; add Mode.HTML, Mode.REACT, etc as desired
+//   mode: [ Mode.MARKDOWN ]  
+// })
 export default defineConfig({
   plugins: [react(), tailwindcss()],
   server: {
