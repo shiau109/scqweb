@@ -33,10 +33,10 @@ https://github.com/shiau109/scqweb
 
 2. Build and Start the App (Dockerized)
 bash
-# Development:
+### Development:
 docker-compose -f docker-compose.yml -f docker-compose.dev.yml up --build -d
 
-# Production:
+### Production:
 docker-compose -f docker-compose.yml -f docker-compose.prod.yml up --build -d
 ## Debug
 ### Backend api check
