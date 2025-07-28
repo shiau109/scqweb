@@ -1,6 +1,9 @@
 import numpy as np
 
 
+
+
+
 class AttenuatorNoise:
     def __init__(self, attenuation, temperature):
         """

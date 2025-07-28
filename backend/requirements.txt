@@ -4,3 +4,5 @@ pandas
 numpy
 python-multipart
 matplotlib
+xarray
+netCDF4

@@ -7,7 +7,7 @@ import base64
 router = APIRouter()
 
 
-@router.post("/wiring/noise_attenuator_chain")
+@router.post("/noise_attenuator_chain")
 def noise_attenuator_chain(data: dict):
     input_noise = data["input_temperature"]
     chain = data["attenuator_chain"]

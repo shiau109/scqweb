@@ -10,9 +10,12 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-from .routers import resonator, attenuation
-app.include_router(resonator.router)
-app.include_router(attenuation.router)
+
+from .routers import wiring
+from .resonator.router import router as resonator_router
+app.include_router(resonator_router)
+
+app.include_router(wiring.router, prefix="/wiring")
 
 
 
